@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/1b199bb414.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <title>João Gadelha </title>
+</head>
+
+<body>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        /*  $(document).ready(function() {
+                    $("a.scrollLink").click(function(event) {
+                        event.preventDefault();
+                        $("html, body").animate({
+                            scrollTop: $($(this).attr("href")).offset().top
+                        }, 500);
+                    });
+                }); */
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > $(window).height() - 100) {
+                    var imageUrl = "img/showcase.jpg";
+                    $(".navbar").css("background", 'url(' + imageUrl + ')');
+                    $(".navbar").css("border-bottom", "solid #FFBC00 4px");
+                } else {
+                    $(".navbar").css("background", "none");
+                    $(".navbar").css("border-bottom", "none");
+                }
+            })
+        })
+    </script>
+    <div id="showcase">
+        <div class="navbar">
+            <img src="img/logo.png" alt="" class="navbarLogo" />
+            <ul>
+                <li><a class="current scrollLink" href="#showcase">HOME</a></li>
+                <li><a href="#profile" class="scrollLink">ABOUT</a></li>
+                <li><a href="#myWork" class="scrollLink">WORK</a></li>
+                <li><a href="#contact-main" class="scrollLink">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <h3>I am João The Web Developer</h3>
+            <p>I specialize in graphic design, UI/UX and photography</p>
+            <a href="#myWork"> View My Work </a>
+        </div>
+    </div>
+    <div id="profile">
+        <div class='section_title'>
+            <h2 class="title">ABOUT ME</h2>
+            <div class="yellow-underline"></div>
+        </div>
+        <p>
+Hello, my name is João. I am a front-end web developer. 
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur magni inventore repellat dolorum
+            placeat quidem nulla deserunt. Magni quia ipsum beatae itaque, animi expedita optio perferendis? Facilis
+            pariatur esse soluta odio dolorem, minima
+            magni facere atque molestias vero sed ipsam quia labore nihil officiis quam aliquid in eos at! Ut, amet
+            incidunt suscipit reiciendis natus dolor exercitationem ipsa tenetur! Quibusdam, eos corrupti nesciunt sint
+            numquam aut magni nemo ducimus
+            quod repudiandae, dolorem dicta itaque minus voluptatem eveniet, commodi maxime ratione porro perspiciatis.
+            Perspiciatis maiores ad alias? Repellendus distinctio, optio deleniti labore laboriosam ipsa, repellat
+            perspiciatis sed maxime dignissimos
+            cum.
+        </p>
+        <img class="profilePhoto" src="img/foto_JOAO.jpg" alt="" />
+    </div>
+
+    <div id="myWork">
+        <h2 class="title">MY WORK</h2>
+        <div class="yellow-underline"></div>
+        <div class="itemsContainer">
+            <img class="item item1" src="img/items/item1.png" alt="" />
+            <img class="item item2" src="img/items/item2.png" alt="" />
+            <img class="item item3" src="img/items/item3.png" alt="" />
+            <img class="item item4" src="img/items/item4.png" alt="" />
+            <img class="item item5" src="img/items/item5.png" alt="" />
+            <img class="item item6" src="img/items/item6.png" alt="" />
+            <img class="item item7" src="img/items/item7.png" alt="" />
+            <img class="item item8" src="img/items/item8.png" alt="" />
+            <img class="item item9" src="img/items/item9.png" alt="" />
+        </div>
+    </div>
+    <div id="contact-main">
+        <h2 class="title">CONTACT ME</h2>
+        <div class="yellow-underline"></div>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-mail-bulk"></i>
+                <h2>E-MAIL</h2>
+                <h2>joaoricardotg@gmail.com</h2>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <h2>PHONE</h2>
+                <h2>+55 (84) 9 9847-7046</h2>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-gadelha-7438007a/"><i class="fab fa-linkedin"></i>
+                    <h2>LINKEDIN</h2>
+                </a>
+                <h2 style="color:white">_</h2>
+            </div>
+        </div>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail address">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Phone number">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter message"></textarea>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+    <div style="height: 3000px;"></div>
+</body>
+
+</html>
