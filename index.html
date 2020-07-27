@@ -3,26 +3,22 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script src="https://kit.fontawesome.com/1b199bb414.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Marck+Script&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:425px)" href="css/mobile.css">
     <title>João Gadelha </title>
 </head>
 
 <body>
     <script src="jquery-3.4.1.js"></script>
     <script>
-        /*  $(document).ready(function() {
-                    $("a.scrollLink").click(function(event) {
-                        event.preventDefault();
-                        $("html, body").animate({
-                            scrollTop: $($(this).attr("href")).offset().top
-                        }, 500);
-                    });
-                }); */
+
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
@@ -39,17 +35,17 @@
     </script>
     <div id="showcase">
         <div class="navbar">
-            <img src="img/logo.png" alt="" class="navbarLogo" />
+            <img src="img/logo_white.png" alt="" class="navbarLogo" />
             <ul>
-                <li><a class="current scrollLink" href="#showcase">HOME</a></li>
-                <li><a href="#profile" class="scrollLink">ABOUT</a></li>
-                <li><a href="#myWork" class="scrollLink">WORK</a></li>
-                <li><a href="#contact-main" class="scrollLink">CONTACT</a></li>
+                <li><a class="current " href="#showcase">HOME</a></li>
+                <li><a href="#profile" class="">ABOUT</a></li>
+                <li><a href="#myWork" class="">WORK</a></li>
+                <li><a href="#contact-main" class="">CONTACT</a></li>
             </ul>
         </div>
         <div class="banner">
             <h3>I am João The Web Developer</h3>
-            <p>I specialize in graphic design, UI/UX and photography</p>
+            <p>I specialize in front end development.</p>
             <a href="#myWork"> View My Work </a>
         </div>
     </div>
@@ -59,7 +55,7 @@
             <div class="yellow-underline"></div>
         </div>
         <p>
-Hello, my name is João. I am a front-end web developer. 
+            Hello, my name is João. I am a front-end web developer.
 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur magni inventore repellat dolorum
             placeat quidem nulla deserunt. Magni quia ipsum beatae itaque, animi expedita optio perferendis? Facilis
@@ -79,19 +75,28 @@ Hello, my name is João. I am a front-end web developer.
         <h2 class="title">MY WORK</h2>
         <div class="yellow-underline"></div>
         <div class="itemsContainer">
-            <img class="item item1" src="img/items/item1.png" alt="" />
-            <img class="item item2" src="img/items/item2.png" alt="" />
-            <img class="item item3" src="img/items/item3.png" alt="" />
-            <img class="item item4" src="img/items/item4.png" alt="" />
-            <img class="item item5" src="img/items/item5.png" alt="" />
-            <img class="item item6" src="img/items/item6.png" alt="" />
-            <img class="item item7" src="img/items/item7.png" alt="" />
-            <img class="item item8" src="img/items/item8.png" alt="" />
-            <img class="item item9" src="img/items/item9.png" alt="" />
+            <a class = "item item1" href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item1" src="img/items/item1.png"
+                    alt="" /></a>
+            <a class = "item item2" href="https://joaoricardotg-newsgrid.netlify.app"><img class="item item2" src="img/items/item2.png"
+                    alt="" /></a>
+            <a class = "item item3" href="https://joaoricardotg-edgeledger.netlify.app"><img class="item item3" src="img/items/item3.png"
+                    alt="" /></a>
+            <a class = "item item4" href="https://joaoricardotg-acmehost.netlify.app"><img class="item item4" src="img/items/item4.png"
+                    alt="" /></a>
+            <a class = "item item5" href="https://joaoricardotg-ecommerce.netlify.app"><img class="item item5" src="img/items/item5.png"
+                    alt="" /></a>
+            <a class = "item item6" href="https://joaoricardotg-hotelbt.netlify.app"><img class="item item6" src="img/items/item6.png"
+                    alt="" /></a>
+            <!-- <a class = "item item7" href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item7" src="img/items/item7.png"
+                    alt="" /></a> -->
+            <a class = "item item8" href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item8" src="img/items/item8.png"
+                    alt="" /></a>
+            <!-- <a  class = "item item9" href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item9" src="img/items/item9.png"
+                    alt="" /></a> -->
         </div>
     </div>
     <div id="contact-main">
-        <h2 class="title">CONTACT ME</h2>
+        <h2 class="title">CONTACT</h2>
         <div class="yellow-underline"></div>
         <div class="contact-info">
             <div>
@@ -118,12 +123,13 @@ Hello, my name is João. I am a front-end web developer.
                 <input type="text" placeholder="Subject">
                 <input type="text" placeholder="Phone number">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Enter message"></textarea>
-                <button>SUBMIT</button>
+                <button><span>SUBMIT</span></button>
             </form>
         </div>
-
+        <div class="contact-closing">
+            <h3> I look forward to working in your project.</h3>
+        </div>
     </div>
-    <div style="height: 3000px;"></div>
 </body>
 
 </html>

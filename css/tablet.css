@@ -1,0 +1,48 @@
+#profile {
+    display:block;
+    text-align:center;
+}
+
+#profile .profilePhoto {
+    margin-top:50px;
+}
+
+#showcase .banner h3 {
+    text-align:center;
+}
+#myWork .itemsContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#myWork .itemsContainer .item8 {
+    grid-column: span 2;
+    grid-row: 4;
+}
+
+#contact-main .contact-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:30px;
+    margin-bottom:300px;
+}
+
+#contact-main {
+    width:90%;
+    margin:0 auto;
+}
+
+#contact-main .contact-container form button {
+    padding:30px 100px;
+    display:grid;
+    place-items:center;
+    position:relative;
+}
+
+#contact-main .contact-container form button span {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+}
+
