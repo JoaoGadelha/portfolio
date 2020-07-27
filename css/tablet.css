@@ -12,7 +12,21 @@
 }
 #myWork .itemsContainer {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#myWork .itemsContainer.react-apps {
+    display:block;
+    width:40%;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+#myWork .myWork-subtitle {
+    display:block;
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:30px;
 }
 
 #myWork .itemsContainer .item8 {
