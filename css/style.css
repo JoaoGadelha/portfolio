@@ -199,21 +199,27 @@ h2 {
 }
 
 #myWork .itemsContainer.react-apps {
-    margin-bottom:50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    place-items:center;
+    grid-gap:0;
+    width:70%;
+    margin:0 auto;
+    margin-bottom:50px;
 }
 
-#myWork .itemsContainer.react-apps a {
-    grid-column:2;
-    grid-row:1;
+
+#myWork .itemsContainer.react-apps a{
+width:370px;
+height:281px;
+}
+
+#myWork .itemsContainer.react-apps a{
+    justify-items:end;
+
 }
 
 
-#myWork .itemsContainer .item8 {
-    grid-column:2;
-    grid-row:3;
-}
 
 #myWork .itemsContainer .item7,
 #myWork .itemsContainer .item9 {
@@ -231,6 +237,7 @@ h2 {
     margin-left:100px;
     margin-bottom:50px;
     display:inline-block;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact */
