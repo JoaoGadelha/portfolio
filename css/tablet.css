@@ -16,11 +16,18 @@
 }
 
 #myWork .itemsContainer.react-apps {
-    display:block;
-    width:40%;
+    border:solid red 2px;
     margin:0 auto;
     margin-bottom:30px;
+    grid-gap:20px;
+    grid-template-rows: 1fr;
 }
+
+#myWork .itemsContainer.react-apps a{
+    height:205.5px;
+    width: 274px;
+}
+
 
 #myWork .myWork-subtitle {
     display:block;
