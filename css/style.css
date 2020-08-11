@@ -267,7 +267,7 @@ h2 {
 
 #contact-main .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     height: 200px;
     align-items: center;

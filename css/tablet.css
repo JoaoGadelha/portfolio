@@ -10,42 +10,12 @@
 #showcase .banner h3 {
     text-align:center;
 }
-#myWork .itemsContainer {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
 
-#myWork .itemsContainer.react-apps {
-    border:solid red 2px;
-    margin:0 auto;
-    margin-bottom:30px;
-    grid-gap:20px;
-    grid-template-rows: 1fr;
-}
-
-#myWork .itemsContainer.react-apps a{
-    height:205.5px;
-    width: 274px;
-}
-
-
-#myWork .myWork-subtitle {
-    display:block;
-    text-align:center;
-    margin:0 auto;
-    margin-bottom:30px;
-}
-
-#myWork .itemsContainer .item8 {
-    grid-column: span 2;
-    grid-row: 4;
-}
 
 #contact-main .contact-info {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap:30px;
-    margin-bottom:300px;
+    margin-bottom:100px;
 }
 
 #contact-main {

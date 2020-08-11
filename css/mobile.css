@@ -26,8 +26,9 @@ margin-top:30px;
 #myWork .itemsContainer {
     width:100%;
     margin:0 auto;
+    display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto 1fr 1fr auto auto 1fr 1fr 1fr 1fr 1fr;
     grid-gap:30px;
 }
 
@@ -35,19 +36,16 @@ margin-top:30px;
     margin:0 auto;
 }
 
-#myWork .itemsContainer .item8 {
-    grid-column: 1;
+#myWork .itemsContainer .divider-line,#myWork .itemsContainer .myWork-subtitle {
+    grid-column:auto;
 }
 
-#myWork .itemsContainer.react-apps {
-    width:100%;
-}
 
 #contact-main .contact-info {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap:30px;
-    margin-bottom:300px;
+    margin-bottom:450px;
 }
 
 #contact-main .contact-container form {
