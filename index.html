@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,35 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
     <link rel="stylesheet" media="screen and (max-width:768px)" href="css/tablet.css">
     <link rel="stylesheet" media="screen and (max-width:425px)" href="css/mobile.css">
-    <title>João Gadelha </title>
+    <title>João Gadelha Web Dev </title>
 </head>
 
 <body>
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                if (scroll > $(window).height() - 100) {
-                    var imageUrl = "img/showcase.jpg";
-                    $(".navbar").css("background", 'url(' + imageUrl + ')');
-                    $(".navbar").css("border-bottom", "solid #FFBC00 4px");
-                } else {
-                    $(".navbar").css("background", "none");
-                    $(".navbar").css("border-bottom", "none");
-                }
-            })
-        })
-    </script>
     <div id="showcase">
         <div class="navbar">
             <img src="img/logo_white.png" alt="" class="navbarLogo" />
             <ul>
-                <li><a class="current " href="#showcase">HOME</a></li>
-                <li><a href="#profile" class="">ABOUT</a></li>
-                <li><a href="#myWork" class="">WORK</a></li>
-                <li><a href="#contact-main" class="">CONTACT</a></li>
+                <li><a class="navItem current " href="#showcase" onclick=updateNavItemsCurrent(this)>HOME</a></li>
+                <li><a class="navItem  " href="#profile" onclick=updateNavItemsCurrent(this)>ABOUT</a></li>
+                <li><a class="navItem  " href="#myWork" onclick=updateNavItemsCurrent(this)>WORK</a></li>
+                <li><a class="navItem  " href="#contact-main" onclick=updateNavItemsCurrent(this)>CONTACT</a></li>
             </ul>
         </div>
         <div class="banner">
@@ -66,36 +50,40 @@
         <img class="profilePhoto" src="img/foto_JOAO.jpg" alt="" />
     </div>
     <div id="myWork">
-        <h2 class="title">MY WORK</h2>
-        <div class="yellow-underline"></div>
+        <div class='section_title'>
+            <h2 class="title">MY WORK</h2>
+            <div class="yellow-underline"></div>
+        </div>
         <div class="itemsContainer">
             <h1 class="myWork-subtitle">React apps</h1>
-            <a href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item1"
+            <a href="https://joaoricardotg-recipefinder.netlify.app" target='_blank'><img class="item item1"
                     src="img/items/react/item1.png" alt="" /></a>
-            <a href="https://joaoricardotg-weatherfinder.netlify.app"><img class="item item2"
+            <a href="https://joaoricardotg-weatherfinder.netlify.app" target='_blank'><img class="item item2"
                     src="img/items/react/item2.png" alt="" /></a>
             <div class='divider-line'></div>
             <h1 class="myWork-subtitle">Static pages</h1>
-                <a href="https://joaoricardotg-newsgrid.netlify.app"><img class="item item3" src="img/items/item2.png"
-                        alt="" /></a>
-                <a href="https://joaoricardotg-edgeledger.netlify.app"><img class="item item4" src="img/items/item3.png"
-                        alt="" /></a>
-                <a href="https://joaoricardotg-acmehost.netlify.app"><img class="item item5" src="img/items/item4.png"
-                        alt="" /></a>
-                <a href="https://joaoricardotg-ecommerce.netlify.app"><img class="item item6" src="img/items/item5.png"
-                        alt="" /></a>
-                <a href="https://joaoricardotg-hotelbt.netlify.app"><img class="item item7" src="img/items/item6.png"
-                        alt="" /></a>
-                <!-- <a  href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item7" src="img/items/item7.png"
+            <a href="https://joaoricardotg-newsgrid.netlify.app" target='_blank'><img class="item item3" src="img/items/item2.png"
+                    alt="" /></a>
+            <a href="https://joaoricardotg-edgeledger.netlify.app" target='_blank'><img class="item item4" src="img/items/item3.png"
+                    alt="" /></a>
+            <a href="https://joaoricardotg-acmehost.netlify.app" target='_blank'><img class="item item5" src="img/items/item4.png"
+                    alt="" /></a>
+            <a href="https://joaoricardotg-ecommerce.netlify.app" target='_blank'><img class="item item6" src="img/items/item5.png"
+                    alt="" /></a>
+            <a href="https://joaoricardotg-hotelbt.netlify.app" target='_blank'><img class="item item7" src="img/items/item6.png"
+                    alt="" /></a>
+            <!-- <a  href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item7" src="img/items/item7.png"
                     alt="" /></a> -->
-                <!-- <a   href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item9" src="img/items/item9.png"
+            <!-- <a   href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item9" src="img/items/item9.png"
                     alt="" /></a> -->
-            </div>
         </div>
     </div>
+    </div>
     <div id="contact-main">
-        <h2 class="title">CONTACT</h2>
-        <div class="yellow-underline"></div>
+        <div class='section_title'>
+            <h2 class="title">CONTACT</h2>
+            <div class="yellow-underline"></div>
+        </div>
         <div class="contact-info">
             <div>
                 <i class="fas fa-mail-bulk"></i>
@@ -108,14 +96,14 @@
                 <h2>+55 (84) 9 9847-7046</h2>
             </div>
             <div>
-                <a href="https://github.com/JoaoGadelha">
+                <a href="https://github.com/JoaoGadelha" target='_blank'>
                     <i class="fab fa-github-square"></i>
-                <h2>GITHUB</h2>
-            </a>
-            <h2 style="color:white">_</h2>
+                    <h2>GITHUB</h2>
+                </a>
+                <h2 style="color:white">_</h2>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-gadelha-7438007a/">
+                <a target='_blank' href="https://www.linkedin.com/in/jo%C3%A3o-gadelha-7438007a/">
                     <i class="fab fa-linkedin"></i>
                     <h2>LINKEDIN</h2>
                 </a>
@@ -136,6 +124,31 @@
             <h3> I look forward to working in your project.</h3>
         </div>
     </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+
+        // adds underline of navbar when window scrolls over 100 vh
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > $(window).height() - 100) {
+                    var imageUrl = "img/showcase.jpg";
+                    $(".navbar").css("background", 'url(' + imageUrl + ')');
+                    $(".navbar").css("border-bottom", "solid #FFBC00 4px");
+                } else {
+                    $(".navbar").css("background", "none");
+                    $(".navbar").css("border-bottom", "none");
+                }
+            })
+        })
+
+        const updateNavItemsCurrent = (elem) => {
+            let current = document.getElementsByClassName('navItem current');
+            current[0].className = 'navItem';
+            elem.className = 'navItem current'
+
+        }   
+    </script>
 </body>
 
 </html>
