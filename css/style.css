@@ -435,3 +435,122 @@ h2 {
     font-size:50px;
 
 }
+
+
+/* Project window ************************************************************/
+
+.project-window-wrapper {
+    display: block;
+    height: 600px;
+    width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+}
+
+
+
+.project-window-wrapper .project-window {
+    position: absolute;
+    height: 600px;
+    width: 1000px;
+    background: white;
+    left: -50%;
+    top: -50%;
+    border-radius: 10px;
+    background: #fffae0;
+    transition: ease all 0.3s;
+    z-index: 300;
+}
+
+.project-window-wrapper .project-window.close {
+    width: 0px;
+    height: 0px;
+    top:0%;
+    left: 0%;
+    opacity: 0;
+}
+
+.project-window-wrapper .project-window .close-button {
+    text-align: right;
+    margin-right:20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    border: solid white 2px;
+    border-radius: 50%;
+    padding-top:6px;
+    transition: ease all 0.3s;
+    cursor: pointer;
+}
+
+.project-window-wrapper .project-window .close-button:hover {
+    border: solid red 2px;
+    border-radius: 50%;
+    color: red;
+}
+
+.project-window-wrapper .project-window .project-window-title  {
+    width: 500px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.project-window-wrapper .project-window .project-grid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    width: 800px;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.project-window-wrapper .project-window .project-grid img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.project-window-wrapper .project-window .project-grid h2 {
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+.project-window-wrapper .project-window .project-grid button {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.project-window-wrapper .project-window .project-grid button:hover {
+    background: black;
+    color: white;
+    transform: scale(0.9);
+}
+
+.project-window-wrapper .project-window .project-grid button:focus {
+    outline: none;
+}
+
+.project-window-wrapper .project-window .project-grid button:nth-child(2) {
+    margin-right: 20px;
+}
+
+.project-window-wrapper .project-window .project-grid .project-content h2{
+font-size: 17px;
+line-height: 30px;
+font-weight: 100;
+}

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
     <link rel="stylesheet" media="screen and (max-width:1024px)" href="css/tablet.css">
     <link rel="stylesheet" media="screen and (max-width:450px)" href="css/mobile.css">
-    <title>João Gadelha Web Dev </title>
+    <title>João Ricardo T. G. Web Dev </title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
             <div class="yellow-underline"></div>
         </div>
         <p>
-            Hello, my name is João Gadelha. I am a front-end web developer. <br><br>
+            Hello, my name is João Ricardo T. Gadelha . I am a front-end web developer. <br><br>
             As a computer engineer working at scientific research projects at the Federal University of Rio Grande do
             Norte (Brazil), I have developed applications in Java and Matlab. <br><br>
             Since the second semester of 2019 I have dedicated myself to brushing up my frontend skills, focusing in
@@ -56,25 +56,25 @@
         </div>
         <div class="itemsContainer react">
             <h1 class="myWork-subtitle">React apps</h1>
-            <a href="https://joaoricardotg-recipefinder.netlify.app" target='_blank' class="item item1">
+            <a href="javascript:void(0)" class="item item1" onclick="openProjectWindow();populateWindow(this)">
             </a>
-            <a href="https://joaoricardotg-weatherfinder.netlify.app" target='_blank' class="item item2">
+            <a href="javascript:void(0)" class="item item2" onclick="openProjectWindow();populateWindow(this)">
             </a>
         </div>
         <div class='divider-line'></div>
         <div class='itemsContainer desktop static1'>
             <h1 class="myWork-subtitle">Static pages</h1>
-            <a href="https://joaoricardotg-newsgrid.netlify.app" target='_blank' class="item item1">
+            <a href="javascript:void(0)" class="item item1" onclick="openProjectWindow();populateWindow(this)">
             </a>
-            <a href="https://joaoricardotg-edgeledger.netlify.app" target='_blank' class="item item2">
+            <a href="javascript:void(0)" class="item item2" onclick="openProjectWindow();populateWindow(this)">
             </a>
-            <a href="https://joaoricardotg-acmehost.netlify.app" target='_blank' class="item item3">
+            <a href="javascript:void(0)" class="item item3" onclick="openProjectWindow();populateWindow(this)">
             </a>
         </div>
         <div class='itemsContainer desktop static2'>
-            <a href="https://joaoricardotg-ecommerce.netlify.app" target='_blank' class="item item4">
+            <a href="javascript:void(0)" class="item item4" onclick="openProjectWindow();populateWindow(this)">
             </a>
-            <a href="https://joaoricardotg-hotelbt.netlify.app" target='_blank' class="item item5">
+            <a href="javascript:void(0)" class="item item5" onclick="openProjectWindow();populateWindow(this)">
             </a>
             <!-- <a  href="https://joaoricardotg-recipefinder.netlify.app"><img class="item item7" src="img/items/item7.png"
                     alt="" /></a> -->
@@ -91,7 +91,7 @@
             </a>
             <a href="https://joaoricardotg-ecommerce.netlify.app" target='_blank' class="item item4">
             </a>
-            
+
         </div>
         <div class='itemsContainer mobile static2'>
             <a href="https://joaoricardotg-hotelbt.netlify.app" target='_blank' class="item item5">
@@ -102,6 +102,23 @@
                     alt="" /></a> -->
         </div>
     </div>
+    <div class="project-window-wrapper">
+        <div class="project-window close">
+            <div class='close-button' onclick=closeProjectWindow()>
+                X
+            </div>
+            <div class='project-window-title'>
+                <h1></h1>
+            </div>
+            <div class='project-grid'>
+                <img src='img/tenor.gif'></img>
+                <div class='project-content'>
+                    <h2></h2>
+                    <a><button> VISIT SITE </button></a>
+                    <a><button> GITHUB </button></a>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="contact-main">
         <div class='section_title'>
@@ -149,29 +166,7 @@
         </div>
     </div>
     <script src="jquery-3.4.1.js"></script>
-    <script>
-
-        // adds underline of navbar when window scrolls over 100 vh
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                if (scroll > $(window).height() - 100) {
-                    var imageUrl = "img/showcase.jpg";
-                    $(".navbar").css("background", 'url(' + imageUrl + ')');
-                    $(".navbar").css("border-bottom", "solid #FFBC00 4px");
-                } else {
-                    $(".navbar").css("background", "none");
-                    $(".navbar").css("border-bottom", "none");
-                }
-            })
-        })
-
-        const updateNavItemsCurrent = (elem) => {
-            let current = document.getElementsByClassName('navItem current');
-            current[0].className = 'navItem';
-            elem.className = 'navItem current'
-
-        }   
+    <script src='script.js'>
     </script>
 </body>
 
