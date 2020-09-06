@@ -36,7 +36,7 @@
        margin-top: 50px;
 }
 
-#myWork .itemsContainer.react, #myWork .itemsContainer.mobile.static1, #myWork .itemsContainer.mobile.static2 {
+#myWork .itemsContainer.mobile.react1, #myWork .itemsContainer.mobile.react2, #myWork .itemsContainer.mobile.static1, #myWork .itemsContainer.mobile.static2 {
     width:250px;
     margin:0 auto;
     display:grid;
@@ -45,8 +45,16 @@
     grid-gap:30px;
 }
 
+#myWork .itemsContainer.mobile.react2 {
+    margin-top: 30px;
+}
+
 #myWork .itemsContainer.mobile.static2 {
     margin-top: 30px;
+}
+
+#myWork .divider-line.mobile {
+    width: 200px;
 }
 
 #myWork .itemsContainer .item {
