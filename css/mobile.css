@@ -95,3 +95,44 @@
 #contact-main .contact-container form button {
     margin-top:20px;
 }
+
+/* ************************************************************************** */
+
+.project-window-wrapper {
+    width: 300px;
+    height:600px;
+}
+
+.project-window-wrapper .project-window {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height:600px;
+}
+
+.project-window-wrapper .project-window .project-window-title  {
+    width: 300px;
+    font-size: 10px;
+}
+
+.project-window-wrapper .project-window .project-grid {
+    display: block;
+    width: 300px;
+}
+
+.project-window-wrapper .project-window .project-grid img {
+    width: 250px;
+    height: auto;
+    min-height: initial;
+}
+
+.project-window-wrapper .project-window .project-grid .project-content {
+    overflow: auto;
+    height: 150px;
+}
+
+.project-window-wrapper .project-window .project-grid .project-content h2 {
+    width: 250px;
+    font-size: 13px;
+}
