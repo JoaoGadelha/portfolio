@@ -1,0 +1,147 @@
+
+
+#showcase .navbar1 ul li {
+    padding:6px;
+}
+
+#showcase .navbar1 ul li a{
+    font-size:100%;
+}
+
+#showcase .navbar2 ul li {
+    padding:6px;
+}
+
+#showcase .navbar2 ul li a{
+    font-size:100%;
+}
+
+
+#showcase .banner h3 {
+    text-align:center;
+}
+
+#profile .profilePhoto {
+    margin:0 auto;
+    width:80%;
+    margin-top:30px;
+}
+
+/***************************************************************************/
+
+#myWork {
+    width:250px;
+    margin:0 auto;
+}
+
+#myWork .divider-line{
+    height:2px;
+    display: block;
+     width:250px;
+      background:rgb(212, 212, 212);
+       align-self:center;
+       margin: 0 auto;
+       margin-bottom: 50px;
+       margin-top: 50px;
+}
+
+#myWork .itemsContainer.mobile.react1, #myWork .itemsContainer.mobile.react2, #myWork .itemsContainer.mobile.static1, #myWork .itemsContainer.mobile.static2 {
+    width:250px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 250px;
+    grid-template-rows: auto;
+    grid-gap:30px;
+}
+
+#myWork .itemsContainer.mobile.react2 {
+    margin-top: 30px;
+}
+
+#myWork .itemsContainer.mobile.static2 {
+    margin-top: 30px;
+}
+
+#myWork .divider-line.mobile {
+    width: 200px;
+}
+
+#myWork .itemsContainer .item {
+    margin:0 auto;
+    width:250px;
+}
+
+#myWork .itemsContainer .divider-line,#myWork .itemsContainer .myWork-subtitle, #myWork .itemsContainer.static1 .myWork-subtitle {
+    grid-column:1;
+}
+
+/**********************************************************************************************/
+
+#contact-main .contact-info {
+    margin: 0 auto;
+    grid-template-columns: 250px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap:30px;
+    margin-bottom:450px;
+    width: 250px;
+}
+
+#contact-main .contact-container form {
+    display:block;
+    padding:0;
+    text-align:center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#contact-main .contact-container form > * {
+    margin: 0 auto;
+    margin-bottom:20px;
+    width:100%;
+    padding: 20px;
+}
+
+#contact-main .contact-container form button {
+    margin-top:20px;
+}
+
+/* ************************************************************************** */
+
+.project-window-wrapper {
+    width: 300px;
+    height:600px;
+}
+
+.project-window-wrapper .project-window {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height:600px;
+}
+
+.project-window-wrapper .project-window .project-window-title  {
+    width: 300px;
+    font-size: 10px;
+}
+
+.project-window-wrapper .project-window .project-grid {
+    display: block;
+    width: 300px;
+}
+
+.project-window-wrapper .project-window .project-grid img {
+    width: 250px;
+    height: auto;
+    min-height: initial;
+}
+
+.project-window-wrapper .project-window .project-grid .project-content {
+    overflow: auto;
+    height: 150px;
+}
+
+.project-window-wrapper .project-window .project-grid .project-content h2 {
+    width: 250px;
+    font-size: 13px;
+}
