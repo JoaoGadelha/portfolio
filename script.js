@@ -85,21 +85,21 @@ let projectsObj =
         item1: {
             title: 'E-commerce Homepage',
             img: 'img/items/react/item1.png',
-            desc: 'React app based on the RainForest API. Consists of the homepage of a e-commerce website. It displays a search bar, login and sign up buttons, a shopping car button, a categories section, 4 carousels with products, one of them features a deadline countdown timer, for the end of the displayed promotion. Also,  a container with random products is displayed with a "Show more products" button, which loads another set of random products into the home page. The page ends with the footer, which displays contact information and several links for potential partners.  ',
+            desc: 'React app based on a shopping products API built by me in Node.js and Express.js. The site features a search bar, carousels, a search results page and pages for each product. Also, login and signup of clients and a shopping cart pages are available.',
             url: 'https://joaoricardotg-reactecommerce.netlify.app',
             github: 'https://github.com/JoaoGadelha/ReactECommerce'
         },
         item2: {
             title: 'Recipe Finder',
             img: 'img/items/react/item2.png',
-            desc: 'React app based on the Spoonacular API that presents recipes of any kind of food. The initial interface displays a button to perform a recipe search and another to update the page with random recipes. After a recipe is clicked, the page is routed to a secondary page, where a image of the finished dish and the steps for the recipe are displayed.',
+            desc: 'React app based on the Spoonacular API that presents a varied number of recipes. The app consists of a search bar for a specific recipe and a results page. The recipes can also be displayed randomly.',
             url: 'https://joaoricardotg-recipefinder.netlify.app',
             github: 'https://github.com/JoaoGadelha/RecipeFinder'
         },
         item3: {
             title: 'Weather Finder',
             img: 'img/items/react/item3.png',
-            desc: 'React app based on the OpenWeather API. Displays one page with a input textfield and a search button, returning information about the weather, wind speed and temperature.',
+            desc: 'React app based on the OpenWeather API. Displays the results of weather characteristics in a determined place in the world.',
             url: 'https://joaoricardotg-weatherfinder.netlify.app',
             github: 'https://github.com/JoaoGadelha/WeatherFinder'
         }
@@ -108,14 +108,14 @@ let projectsObj =
         item1: {
             title: 'NewsGrid',
             img: 'img/items/static/item1.png',
-            desc: 'Site built with pure HTML, CSS and Javascript, it displays the home page of a news website, with one article being placed in a big showcase, while other texts are published in a CSS grid.',
+            desc: 'Site built with pure HTML, CSS and Javascript. Displays the home page of a news website, with one article being placed in a big showcase, while other texts are published in a CSS grid.',
             url: 'https://joaoricardotg-newsgrid.netlify.app',
             github: 'https://github.com/JoaoGadelha/NewsGrid'
         },
         item2: {
             title: 'EdgeLedger',
             img: 'img/items/static/item2.png',
-            desc: 'Site built with pure HTML, CSS and Javascript, it opens with a hero section, followed by a "What We Do", "Who We Are" and "Our clients" section. A contact form and geolocation feed by Google Maps API is displayed in the end of the page.',
+            desc: 'Site built with pure HTML, CSS and Javascript. Displays a hero section, followed by a "What We Do", "Who We Are" and "Our clients" sections. A contact form and geolocation feed by Google Maps API are displayed in the end of the page.',
             url: 'https://joaoricardotg-edgeledger.netlify.app',
             github: 'https://github.com/JoaoGadelha/EdgeLedger'
         },
@@ -129,14 +129,14 @@ let projectsObj =
         item4: {
             title: 'E-commerce Homepage',
             img: 'img/items/static/item4.png',
-            desc: 'Site built with pure HTML, CSS and Javascript, it displays the homepage of a e-commerce website. It opens with a hero section with a carousel. A section leading to a acessories, meet the team and new arrivals pages follows up after that. A grid displaying products is placed before a teaser footer.',
+            desc: 'Site built with pure HTML, CSS and Javascript, it displays the homepage of a e-commerce website.',
             url: 'https://joaoricardotg-ecommerce.netlify.app',
             github: 'https://github.com/JoaoGadelha/Ecommerce'
         },
         item5: {
             title: 'HotelBT',
             img: 'img/items/static/item5.png',
-            desc: 'Site built with pure HTML, CSS and Javascript, displays a home, about and contact pages.',
+            desc: 'Site built with pure HTML, CSS and Javascript. Consists of the website for a hotel.',
             url: 'https://joaoricardotg-hotelbt.netlify.app',
             github: 'https://github.com/JoaoGadelha/HotelBT'
         }
