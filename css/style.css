@@ -47,6 +47,7 @@ h2 {
     width: 100%;
     z-index:400;
     transition: ease all 0.3s;
+	top: 0;
     
 }
 
@@ -118,6 +119,7 @@ h2 {
     transition: ease all 0.3s;
     background-position-y: 0;
     border-bottom: solid #ffbc00 4px;
+	top: 0;
 }
 
 .navbar2.animate {
