@@ -80,7 +80,14 @@ const closeProjectWindow = () => {
 
 
 let projectsObj =
-{
+{   reactNative: {
+        item1: {
+            title: 'Kiss \'n Tell App',
+            img: 'img/items/react/item1.png',
+            desc: 'Social app built using React Native for the frontend and Strapi, an open source headless CMS, to create API routes and manage user databases.',
+            url: 'https://play.google.com/store/apps/details?id=com.kissntell',
+        },
+    },
     react: {
         item1: {
             title: 'E-commerce Homepage',
