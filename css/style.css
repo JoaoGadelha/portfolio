@@ -336,7 +336,7 @@ h2 {
 }
 
 #myWork .itemsContainer.react-native .item1 {
-    background: url('../img/items/react-native/item1.png') center center/cover no-repeat;
+    background: url('../img/items/react-native/item1_teste.png') top center/cover no-repeat;
     grid-column: 2;
 }
 
@@ -682,6 +682,43 @@ h2 {
 .project-window-wrapper .project-window .project-btn button:nth-child(2) {
     margin-right: 20px;
 }
+
+.project-window-wrapper .project-window .project-btn-reactNative {
+    margin: 0 auto;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+
+.project-window-wrapper .project-window .project-btn-reactNative button {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.project-window-wrapper .project-window .project-btn-reactNative button:hover {
+    background: black;
+    color: white;
+    transform: scale(0.9);
+}
+
+.project-window-wrapper .project-window .project-btn-reactNative button:focus {
+    outline: none;
+}
+
+.project-window-wrapper .project-window .project-btn-reactNative button:nth-child(2) {
+    margin-right: 20px;
+}
+
+
 
 .project-window-wrapper .project-window .project-grid .project-content {
     grid-column: 3/4;

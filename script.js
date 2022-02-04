@@ -79,12 +79,14 @@ const closeProjectWindow = () => {
 // Populates project window
 
 let projectsObj =
-{   reactNative: {
+{
+    reactNative: {
         item1: {
             title: 'Kiss \'n Tell App',
             img: 'img/items/react-native/item1.png',
             desc: 'Social app built using React Native for the frontend and Strapi, an open source headless CMS, to create API routes and manage user databases.',
             url: 'https://play.google.com/store/apps/details?id=com.kissntell',
+            url2: 'https://apps.apple.com/us/app/kissn-tell-mapa-da-pega%C3%A7%C3%A3o/id1570618533'
         },
     },
     react: {
@@ -155,6 +157,7 @@ let projectImg;
 let projectCont;
 let projectGrid;
 let projectBtn;
+let projectBtnReactNative;
 
 const populateWindow = (elem) => {
     projectWindow = document.getElementsByClassName('project-window-title');
@@ -162,18 +165,24 @@ const populateWindow = (elem) => {
     projectCont = document.getElementsByClassName('project-content');
     projectGrid = document.getElementsByClassName('project-grid');
     projectBtn = document.getElementsByClassName('project-btn');
+    projectBtnReactNative = document.getElementsByClassName('project-btn-reactNative');
+
     if (elem.parentElement.className.search('react-native') >= 0) {
+        projectBtn[0].style.display = 'none';
+        projectBtnReactNative[0].style.display = 'grid';
         if (elem.className.search('item1') >= 0) {
             projectTitle.innerHTML = projectsObj.reactNative.item1.title;
             projectCont[0].children[0].innerHTML = projectsObj.reactNative.item1.desc;
             projectGrid[0].children[0].src = projectsObj.reactNative.item1.img;
-            projectBtn[0].children[0].href = projectsObj.reactNative.item1.url;
-            projectBtn[0].children[0].target = '_blank';
-            projectBtn[0].children[1].href = projectsObj.reactNative.item1.github;
-            projectBtn[0].children[1].target = '_blank';
+            projectBtnReactNative[0].children[0].href = projectsObj.reactNative.item1.url;
+            projectBtnReactNative[0].children[0].target = '_blank';
+            projectBtnReactNative[0].children[1].href = projectsObj.reactNative.item1.url2;
+            projectBtnReactNative[0].children[1].target = '_blank';
+            console.log('---------------------',projectBtn[0].children[0].href)
         }
     } else if (elem.parentElement.className.search('react') >= 0) {
-
+        projectBtn[0].style.display = 'grid';
+        projectBtnReactNative[0].style.display = 'none';
         if (elem.className.search('item1') >= 0) {
             projectTitle.innerHTML = projectsObj.react.item1.title;
             projectCont[0].children[0].innerHTML = projectsObj.react.item1.desc;
@@ -203,7 +212,8 @@ const populateWindow = (elem) => {
         }
 
     } else if (elem.parentElement.className.search('static') >= 0) {
-
+        projectBtn[0].style.display = 'grid';
+        projectBtnReactNative[0].style.display = 'none';
         if (elem.className.search('item1') >= 0) {
             projectTitle.innerHTML = projectsObj.static.item1.title;
             projectCont[0].children[0].innerHTML = projectsObj.static.item1.desc;
