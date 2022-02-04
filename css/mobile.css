@@ -45,7 +45,11 @@
        margin-top: 50px;
 }
 
-#myWork .itemsContainer.mobile.react1, #myWork .itemsContainer.mobile.react2, #myWork .itemsContainer.mobile.static1, #myWork .itemsContainer.mobile.static2 {
+#myWork .itemsContainer.mobile.react-native,
+#myWork .itemsContainer.mobile.react1,
+ #myWork .itemsContainer.mobile.react2,
+  #myWork .itemsContainer.mobile.static1,
+   #myWork .itemsContainer.mobile.static2 {
     width:250px;
     margin:0 auto;
     display:grid;
@@ -53,6 +57,15 @@
     grid-template-rows: auto;
     grid-gap:30px;
 }
+
+#myWork .itemsContainer.mobile.react-native *,
+#myWork .itemsContainer.mobile.react1 *,
+ #myWork .itemsContainer.mobile.react2 *,
+  #myWork .itemsContainer.mobile.static1 *,
+   #myWork .itemsContainer.mobile.static2 * {
+       grid-column: 1;
+   }
+
 
 #myWork .itemsContainer.mobile.react2 {
     margin-top: 30px;
@@ -71,7 +84,9 @@
     width:250px;
 }
 
-#myWork .itemsContainer .divider-line,#myWork .itemsContainer .myWork-subtitle, #myWork .itemsContainer.static1 .myWork-subtitle {
+#myWork .itemsContainer .divider-line,
+#myWork .itemsContainer .myWork-subtitle,
+ #myWork .itemsContainer.static1 .myWork-subtitle {
     grid-column:1;
 }
 
@@ -109,7 +124,7 @@
 
 .project-window-wrapper {
     width: 300px;
-    height:600px;
+    height:700px;
 }
 
 .project-window-wrapper .project-window {
@@ -117,7 +132,8 @@
     margin: 0;
     padding: 0;
     width: 300px;
-    height:600px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 .project-window-wrapper .project-window .project-window-title  {

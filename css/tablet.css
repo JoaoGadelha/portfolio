@@ -22,6 +22,22 @@
        margin-top: 70px;
 }
 
+#myWork .itemsContainer.mobile.react-native{
+    display: grid;
+    grid-template-columns: 300px;
+    width: 620px;
+    margin:0 auto;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    place-items: center;
+}
+
+#myWork .itemsContainer.mobile.react-native *{
+    grid-column: span 2;
+}
+
+
 #myWork .itemsContainer.mobile.react1{
     display: grid;
     grid-template-columns: 300px 300px;
@@ -67,7 +83,11 @@
     margin-bottom: 20px;
 }
 
-#myWork .itemsContainer.desktop.static1, #myWork .itemsContainer.desktop.static2, #myWork .itemsContainer.desktop.react, #myWork .divider-line.desktop {
+#myWork .itemsContainer.desktop.static1,
+ #myWork .itemsContainer.desktop.static2,
+  #myWork .itemsContainer.desktop.react,
+   #myWork .divider-line.desktop,
+   #myWork .itemsContainer.desktop.react-native {
     display: none;
 }
 
